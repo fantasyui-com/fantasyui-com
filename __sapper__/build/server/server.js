@@ -7,8 +7,8 @@ var polka = _interopDefault(require('polka'));
 var compression = _interopDefault(require('compression'));
 var fs = _interopDefault(require('fs'));
 var path = _interopDefault(require('path'));
-var octicons = _interopDefault(require('octicons'));
 var moment = _interopDefault(require('moment'));
+var octicons = _interopDefault(require('octicons'));
 var Stream = _interopDefault(require('stream'));
 var http = _interopDefault(require('http'));
 var Url = _interopDefault(require('url'));
@@ -486,12 +486,6 @@ const Bot = create_ssr_component(($$result, $$props, $$bindings, $$slots) => {
 
 const Routes = create_ssr_component(($$result, $$props, $$bindings, $$slots) => {
 	return `${($$result.head += `${($$result.title = `<title>fantasyui.com</title>`, "")}`, "")}
-
-
-
-
-
-
 
 <div class="${"container-fluid"}">
     <div class="${"row row-cols-1 row-cols-md-2 row-cols-xl-4"}">
