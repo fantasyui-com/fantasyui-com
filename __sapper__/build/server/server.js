@@ -277,11 +277,7 @@ const Bot = create_ssr_component(($$result, $$props, $$bindings, $$slots) => {
 						proposition: "laws",
 						once: false
 					},
-					{
-						text: "I was just searching for the terminal.",
-						proposition: "terminal",
-						once: true
-					},
+					// {text:'I was just searching for the terminal.', proposition:'terminal', once:true},
 					{
 						text: "What is your name?",
 						proposition: "introduction",
@@ -339,7 +335,7 @@ const Bot = create_ssr_component(($$result, $$props, $$bindings, $$slots) => {
 		],
 		introduction: [
 			{
-				text: "It is just Squirrel... Dr. Squirrel. Thanks for asking."
+				text: "It is just Bot... Dr. Bot. Thanks for asking."
 			},
 			{
 				pick: [
@@ -443,7 +439,7 @@ const Bot = create_ssr_component(($$result, $$props, $$bindings, $$slots) => {
 
 
 
-  <div class="${"p-3"}" style="${"min-height: 32rem; overflow-y: auto;"}">
+  <div class="${"p-3"}">
 
     
     ${each(conversation, item => `${item.user
@@ -487,8 +483,9 @@ const Bot = create_ssr_component(($$result, $$props, $$bindings, $$slots) => {
 const Routes = create_ssr_component(($$result, $$props, $$bindings, $$slots) => {
 	return `${($$result.head += `${($$result.title = `<title>fantasyui.com</title>`, "")}`, "")}
 
-<div class="${"container-fluid"}">
+<div class="${"container-fluid text-muted"}">
     <div class="${"row row-cols-1 row-cols-md-2 row-cols-xl-4"}">
+
 
     <div class="${"col pb-3"}">
       ${validate_component(Bot, "Bot").$$render($$result, {}, {}, {})}
@@ -509,19 +506,24 @@ const About = create_ssr_component(($$result, $$props, $$bindings, $$slots) => {
 
 
 <div class="${"container-fluid text-muted"}">
-    <div class="${"row row-cols-1 row-cols-md-2 row-cols-xl-4"}">
-
-    <div class="${"col pb-3 text-white"}">
-      <p>this program is built on bootstrap grid</p>
-      <p>all components are purely built on grid, plus utilities</p>
-      <p>css library <a href="${"https://github.com/fantasyui-com/cssgui"}">cssgui</a></p>
-    </div>
-
+  <div class="${"row row-cols-1 row-cols-md-2 row-cols-xl-4"}">
     <div class="${"col pb-3"}">
 
-    </div>
+      <div class="${"container-fluid bg-dark text-white shadow rounded p-2"}" style="${"max-height: 32rem; overflow-y: auto; overflow-x: hidden;"}">
+        <div class="${"row mb-3"}">
+          <div class="${"col"}">
+
+            <p>this is an experiment</p>
+            <p>this program is built on bootstrap grid</p>
+            <p>all components here are built on the grid, plus utilities</p>
+            <p>visit css library <a href="${"https://github.com/fantasyui-com/cssgui"}" rel="${"noopener noreferrer"}" target="${"_blank"}">cssgui</a> to check out the [s]css code</p>
+
+          </div>
+        </div>
+      </div>
 
     </div>
+  </div>
 </div>`;
 });
 

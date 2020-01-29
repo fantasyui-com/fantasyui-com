@@ -14,8 +14,9 @@ import Bot from '../components/Bot.svelte';
   <title>fantasyui.com</title>
 </svelte:head>
 
-<div class="container-fluid">
+<div class="container-fluid text-muted">
     <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4">
+
 
     <div class="col pb-3">
       <Bot/>

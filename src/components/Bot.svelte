@@ -32,7 +32,7 @@
          //{text:'What are your Prime Directives?', reply:'Aww.', icon:'cats/cat-02.png'},
          {text:'What are your Prime Directives?', proposition:'directives', once:false},
          {text:'What are the Laws of Robotics?', proposition:'laws', once:false},
-         {text:'I was just searching for the terminal.', proposition:'terminal', once:true},
+        // {text:'I was just searching for the terminal.', proposition:'terminal', once:true},
          {text:'What is your name?', proposition:'introduction', once:true},
          //{text:'I told you, go away already!', action:reset}
        ]},
@@ -70,7 +70,7 @@
      ],
 
      introduction: [
-       {text:"It is just Squirrel... Dr. Squirrel. Thanks for asking."},
+       {text:"It is just Bot... Dr. Bot. Thanks for asking."},
        {pick:[
          {text:'Sure.', proposition:'start'},
          {text:'Are you a real Doctor?', proposition:'doctor'},
@@ -172,7 +172,7 @@ initialize()
 
 
 
-  <div class="p-3" style="min-height: 32rem; overflow-y: auto;">
+  <div class="p-3">
 
     <!-- STORAGE OF CONVERSATION -->
     {#each conversation as item}

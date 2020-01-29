@@ -1,9 +1,15 @@
 body {
   font-family: 'Lato', sans-serif;
   background: #252525;
+  padding: 1rem;
+
+  background-image: url("carbon-fibre-v2.png");
+
 }
 
-
+.bg-dark {
+  background-image: url("cross-stripes.png");
+}
 
 
 
