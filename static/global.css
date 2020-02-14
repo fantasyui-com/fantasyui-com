@@ -17,3 +17,10 @@ body {
 .fill-white {
   fill: silver;
 }
+
+a {
+  color: #3fe3e8;
+}
+a:hover {
+  color: #d5fafb;
+}

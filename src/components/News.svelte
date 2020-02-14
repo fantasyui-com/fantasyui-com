@@ -20,6 +20,7 @@
 
   let news = [
 
+    {date:'2020-02-14T13:29:32.322Z', html:'Initial Toolbox Introduction'},
     {date:'2020-01-29T03:34:30.737Z', html:'Static Website Launch'},
     {date:'2020-01-29T00:00:00.737Z', html:'Drop Bootstrap Components'},
 
